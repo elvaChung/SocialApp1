@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf Tutorial</title>
+</head>
+<body>
+	<h2>Manage Users</h2>
+
+	<div align="center">
+
+		<a th:href="@{http://localhost:8080}">Home</a> | <a th:href="@{posts}">Posts</a>
+		| <a th:href="@{students}">Students</a> | <a th:href="@{users}">Users</a>
+		| <a th:href="@{locations}">Locations</a>
+
+	</div>
+
+	<ul>
+		<li th:each="user : ${users}"><span
+			th:text="${user.firstname} + ' ' + ${user.lastname} + ': ' + ${user.location.name}">Default</span>
+		</li>
+	</ul>
+
+</body>
+</html>
