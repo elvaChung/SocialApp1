@@ -1,4 +1,4 @@
-# SocialApp1
+# Social App API
 
 Developed a Social API with Spring Boot that consisted of a number of independent microservices.
 
